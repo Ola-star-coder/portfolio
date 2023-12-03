@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body {
+    font-size: 20px;
+    font-family: "Sofia", sans-serif;
+    /* text-shadow: 3px 3px 3px #0a0a0a; */
+    background-color: #d5d8db;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: #081b29;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    padding: 20px 10%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    position: relative;
+    font-size: 35px;
+    color: #dc0f0f;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600s;
+    margin-left: 35px;
+    float: left;
+    transition: .6s;
+    margin-top: 16px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-image: url(home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-content {
+    max-width: 600px;
+    color: #ededed;
+    font-family: cursive;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    color: aquamarine;
+    font-family: Calisto MT,
+        Bookman Old Style,
+        Bookman,
+        Goudy Old Style,
+        Garamond,
+        Hoefler Text,
+        Bitstream Charter,
+        Georgia,
+        serif;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 23px;
+    font-weight: 300;
+    color: burlywood;
+    font-family: Optima,
+        Segoe,
+        Segoe UI,
+        Candara,
+        Calibri,
+        Arial,
+        sans-serif;
+}
+
+.home-content p {
+    color: #44b9e7;
+    margin: 10px 0 30px;
+}
+
+span {
+    color: #7b08fe;
+    font-size: large;
+    font-family: Perpetua,
+        Baskerville,
+        Big Caslon,
+        Palatino Linotype,
+        Palatino,
+        serif;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    /* background: #081b29; */
+    text-decoration: none;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 100%;
+    background: #00abf0;
+    color: #081b29;
+    border: 2px solid;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Cambria,
+        Georgia,
+        serif;
+    letter-spacing: 1px;
+    overflow: hidden;
+    z-index: 1;
+    transition: .6s;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(1) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(1):hover {
+    color: #081b29;
+}
+
+.btn-box a::before {
+    position: absolute;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    transition: .5s;
+    z-index: 1;
+}
+
+.gallery {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #c3c3ce; */
+    gap: 17px;
+}
+
+.gallery img {
+    margin-top: 15px;
+    width: 300px;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: translateY(-90px);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 180px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.text p {
+    font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-family: 'Concert One', sans-serif;
+}
+
+hr {
+    color: #101111;
+    width: 230px;
+    position: absolute;
+    left: 650px;
+}
+
+.line {
+    color: rgb(0, 255, 60);
+    margin-top: 20px;
+    display: none;
+}
+
+.teams {
+    margin-top: 10%;
+}
+
+
+.teams h1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 63px;
+    color: #d31450;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.toms {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member:hover {
+    transform: translateY(-3px) translateY(-10px);
+    transition: all .40s ease;
+    cursor: pointer;
+}
+
+
+.toms .team-member {
+    background-color: darkkhaki;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #b5135f;
+    position: relative;
+}
+
+.toms .team-member h3 {
+    color: #1036e0;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.toms .team-member p {
+    line-height: 30px;
+    color: #fcfcfe;
+    font-family: 'Concert One', sans-serif;
+}
+
+.toms .team-member p.role {
+    color: darkolivegreen;
+    font-size: 17px;
+    line-height: 30px;
+    gap: 10px;
+    text-transform: uppercase;
+    margin: 12px 0px;
+    font-family: 'Jura', sans-serif;
+}
+
+.icons a {
+    display: inline-block;
+    font-size: 22px;
+    color: #d6d6d6;
+    margin: 10px 7px;
+}
+
+/*------------------------- ICONS FOR SOCIAL MEDIA--------------- */
+.fa-facebook {
+    color: blue;
+    font-size: 31px;
+}
+
+.fa-facebook:hover {
+    color: #7800f0;
+    transition: .5s;
+    z-index: -1;
+    transform: translateY(-3px);
+}
+
+.fa-instagram {
+    color: rgb(197, 57, 57);
+    font-size: 33px;
+}
+
+.fa-instagram:hover {
+    color: rgb(130, 176, 60);
+    transition: .5s;
+    transform: translateY(-3px);
+}
+
+.fa-twitter {
+    color: blue;
+    font-size: 33px;
+}
+
+.fa-twitter:hover {
+    color: black;
+    transition: .5s;
+    transform: translateY(-5px);
+}
+
+.fa-tiktok {
+    color: #d31450;
+    font-size: 33px;
+}
+
+.fa-tiktok:hover {
+    color: rgb(149, 212, 14);
+    transition: .5s;
+}
+
+.fa-linkedin {
+    color: #44b9e7;
+    font-size: 33px;
+}
+
+.fa-linkedin:hover {
+    color: rgb(8, 34, 228);
+    transition: .6s;
+}
+
+footer {
+    padding: 80px 13% 70px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3rem;
+    background: wheat;
+}
+
+.footer-content h4 {
+    color: darkorange;
+    margin-bottom: 1.4rem;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-content p {
+    color: #7b08fe;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 20px 0;
+    font-family: 'Jura', sans-serif;
+}
+
+.footer-content li {
+    margin-bottom: 1rem;
+    list-style: none;
+    font-size: 19px;
+}
+
+.footer-content li a {
+    text-decoration: none;
+    color: #1a1919;
+    display: block;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateY(-5px);
+    color: #d82121;
+}
+
+@media screen and (min-width:300px) and (max-width:850px) {
+    .logo {
+        font-size: 17px;
+        color: green;
+        margin-left: -19px;
+        text-decoration: underline;
+    }
+
+    .home {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        background-image: none;
+        background-position: none;
+        background-repeat: none;
+        background-size: none;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 13px;
+    }
+
+    body {
+        background-color: #081b29;
+        color: #cdcdd2;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home {
+        background-color: #081b29;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .line {
+        color: rgb(0, 255, 60);
+        margin-top: 20px;
+    }
+
+    .toms .team-member {
+        background-color: rgb(11, 11, 121);
+        color: #ededed;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 300px;
+    }
+
+    .toms .team-member h3 {
+        color: #c1c3c9;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+}
